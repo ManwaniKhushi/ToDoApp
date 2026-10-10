@@ -51,6 +51,7 @@
     width: 100%;
     max-width: 550px;
     padding: clamp(16px, 4vw, 40px);
+    display: none;
 }
 .createTask form{
     display: flex;
@@ -85,12 +86,9 @@ button:hover{
 .outline{
     border-radius:7px;
     background-color: rgb(52, 74, 77);
-    border: 1px solid aliceblue;
     width: 100%;
     height: auto;
-    min-height: 200px;
     margin: 20px auto;
-    padding: clamp(15px, 3vw, 35px);
 }
 .title p{
     font-size: 30px;
@@ -116,6 +114,7 @@ button:hover{
      gap: 20px;
      width: 100%;
     align-items: stretch;
+    padding: 10px;
 }
 .card{
     width: 100%;
@@ -127,14 +126,14 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     padding: 15px; 
-    gap: 50px; 
+    gap: 150px; 
 }
 .taskText{
-    width:auto;
+    width: 300px;
     min-width: 50px;   
 }
 .taskTitle {
-    width: 80%;
+    width: 100%;
     font-size: 20px;
     margin-bottom: 3px;
 }
@@ -168,41 +167,6 @@ button:hover{
     width: 60px;
     color: black;
     min-height: 32px;
-}
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    .header {
-        margin-left: 0;
-    }
-
-    .content {
-        margin-top: 15px;
-        width: 100%;
-    }
-
-    .createbtn {
-        max-width: 100%;
-    }
-
-    .createTask,
-    .outline {
-        margin: 15px auto;
-    }
-
-    .title p {
-        font-size: 24px;
-    }
-
-    .emptyListText p {
-        font-size: 20px;
-    }
-
-    .card {
-        align-items: flex-start;
-    }
 }
 
 @media (max-width: 480px) {
@@ -241,4 +205,12 @@ button:hover{
     .createTask form {
         gap: 14px;
     }
+}
+#titleError {
+    color: yellow;
+    background-color: transparent;
+}
+.outline h3{
+    font-size: 30px;
+    color: aliceblue;
 }
