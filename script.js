@@ -2,15 +2,15 @@ const formShow = document.getElementById("showFormbtn");
 const formEle = document.querySelector(".createTask");
 const taskList = document.getElementById("taskList");
 const getTask = document.querySelector("#todoForm");
+
+function saveTasks() {
+     localStorage.setItem("todos", JSON.stringify(tasks));
+}
 const tasktitle1 = document.querySelector("#taskTitle");
 const taskdes = document.querySelector("#taskDescription");
 const error = document.getElementById("titleError");
 const updatebtn = document.getElementById("createbtn");
 const allTag = document.getElementById("alltag");
-function saveTasks() {
-     localStorage.setItem("todos", JSON.stringify(tasks));
-}
-
 let tasks = JSON.parse(localStorage.getItem("todos")) || [];
 let editingTaskId = null;
 
