@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Task App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <nav>
+            <div class="logo"><h1>To Do App</h1></div>
+        </nav>
+        <div class="content">
+            <h2>Add tasks instantly</h2>
+            <p class="heading">JUST DO IT.</p>
+            <button class="createbtn">+ Add Task</button>
+            <div class="createTask"><div class="form">
+                <form action="" id="todoform">
+                    <input type="text" placeholder="Task Title" class="inputField" id="tasktitle">
+                    <textarea name="" id="" placeholder="Type Description Here..." class="inputField" id="taskdescription"></textarea>
+                    <button type="submit" class="createbtn">ADD</button>
+                </form>
+            </div></div>
+            <div class="alltasks">
+              <div class="outline">
+                <div class="title"><p>All Records</p></div>
+                <div class="emptyListText"><p>No Tasks To Complete </p></div>
+                <br>
+                <div class="list" id="tasklist">
+                    <div class="card">
+                        <div class="taskText"> <h5 class="taskTitle">Task Title 1 </h5>
+                         <p class="taskdescription">Task Description 1</p></div>
+                         <div class="taskbuttons"><button class="editbtn">Edit</button><button class="delbtn">Delete</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="taskText"> <h5 class="taskTitle">Task Title 2</h5>
+                         <p class="taskdescription">Task Description 2</p></div>
+                         <div class="taskbuttons"><button class="editbtn">Edit</button><button class="delbtn">Delete</button></div>
+                    </div>
+                    <div class="card">
+                        <div class="taskText"> <h5 class="taskTitle">Task Title 3</h5>
+                         <p class="taskdescription">Task Description 3</p></div>
+                         <div class="taskbuttons"><button class="editbtn">Edit</button><button class="delbtn">Delete</button></div>
+                    </div>
+                      <div class="card">
+                        <div class="taskText"> <h5 class="taskTitle">Task Title 4 Task Title 4 Task Title 4Task Title 4 </h5>
+                         <p class="taskdescription">Task Description 3 Task Title 4  Task Title 4 Task Title 4 </p></div>
+                         <div class="taskbuttons"><button class="editbtn">Edit</button><button class="delbtn">Delete</button></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
